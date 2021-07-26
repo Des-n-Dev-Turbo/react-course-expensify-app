@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should Render the expense data 1`] = `
+<div>
+  <Link
+    to="/edit/3"
+  >
+    <h4>
+      Credit Card
+    </h4>
+  </Link>
+  <p>
+    4008.63
+     - 
+    Jan 5th, 1970
+  </p>
+</div>
+`;

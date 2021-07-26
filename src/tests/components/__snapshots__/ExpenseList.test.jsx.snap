@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should test the Expense List Component if expenses are not available 1`] = `
+<div>
+  <h2>
+    Expenses
+  </h2>
+  <p>
+    No expenses Available
+  </p>
+</div>
+`;
+
+exports[`Should test the Expense List Component if expenses available 1`] = `
+<div>
+  <h2>
+    Expenses
+  </h2>
+  <ExpenseListItem
+    amount={150}
+    createdAt={0}
+    description="Gum"
+    id="1"
+    key="1"
+    note=""
+  />
+  <ExpenseListItem
+    amount={15000}
+    createdAt={-345600000}
+    description="Rent"
+    id="2"
+    key="2"
+    note=""
+  />
+  <ExpenseListItem
+    amount={4008.63}
+    createdAt={345600000}
+    description="Credit Card"
+    id="3"
+    key="3"
+    note=""
+  />
+</div>
+`;
