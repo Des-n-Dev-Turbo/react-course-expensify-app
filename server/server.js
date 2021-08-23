@@ -12,5 +12,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log("Server has started on Port : 3000");
+    console.log("Server has started on Port : ",port);
 });
