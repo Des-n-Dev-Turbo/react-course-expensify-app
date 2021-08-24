@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { startAddExpense } from "../actions/expenses";
 import ExpenseForm from './ExpenseForm';
 import { useHistory } from 'react-router-dom';
+import { history } from "../routers/AppRouter";
 
 
 export const AddPage = (props) => {
@@ -13,7 +14,7 @@ export const AddPage = (props) => {
       <ExpenseForm 
         onSubmit={(expense) => {
           props.onSubmit(expense);
-          history.push('/');
+          history.push('/dashboard');
         }}
       />
     </div>

@@ -4,6 +4,7 @@ import { useSelector, connect } from 'react-redux';
 import ExpenseForm from "./ExpenseForm";
 import { startEditExpense, startRemoveExpense } from "../actions/expenses";
 import { useHistory } from "react-router-dom";
+import { history } from "../routers/AppRouter";
 
 export const EditPage = (props) => {
   let history = useHistory();
@@ -16,14 +17,14 @@ export const EditPage = (props) => {
         expense={expense} 
         onSubmit={(expense) => {
           props.onSubmit(id, expense);
-          history.push('/');
+          history.push('/dashboard');
         }
         }
       />
       <button onClick={
             () => {
                 props.onRemove({id});
-                history.push('/');
+                history.push('/dashboard');
             }
         }>Remove</button>
     </div>
