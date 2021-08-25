@@ -8,7 +8,7 @@ const Header = ({ startLogout }) => (
     <div className="content-container">
       <div className="header__content">
         <Link to="/dashboard" exact className="header__title">
-          <h1>Extensify</h1>
+          <h1>Expensify</h1>
         </Link>
         <button onClick={startLogout} className="button button--link">
           Logout
